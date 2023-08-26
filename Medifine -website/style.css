@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color:#F0F4F5;
+    background-image: url(images/stethoscope.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:450px 450px;
+}
+.navbar{
+    position: relative;
+    top: 1rem;
+    height: 10%;
+    padding: 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar ul li a{
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    margin: 0rem 1rem;
+    flex-wrap: nowrap;
+}
+.navbar ul li a:hover{
+    border-radius: 5px;
+    outline:2px solid #20BC7E;
+}
+.hero{
+    height: 90%;
+    width: 100%;
+    display: flex;
+}
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 7rem;
+    width: 100%;
+}
+.hero-rite{
+width: 100%;
+}
+
+.hero-rite img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.greenimg{
+    width: 500px;
+    height: 500px;
+}
+.yellowimg{
+    height: 450px;
+    width: 450px;
+}
+.doctorimg{
+    height: 93%;
+}
+.topangle{
+    height: 1rem;
+    width: 1rem;
+}
+.hero-left h1{
+    letter-spacing: 2px;
+    font-size: 40px;
+
+}
+.hero-left p{
+    margin-top: 1rem;
+    font-weight: 600;
+}
+.hero-left button{
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:#20BC7E ;
+    color: white;
+    border: 0;
+    padding: 5px 20px;
+    border-radius: 20px;
+
+}
+.hero-left-low{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.child{
+    display: flex;
+}
+.child img{
+    height: 20px;
+}
+.mouse{
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+.hero-left button:hover{
+    background: transparent;
+    outline: 1px solid #20BC7E;
+    color: #20BC7E;
+}
+.bars{
+    display: none;
+}
+@media screen and (width<=1035px) and (width>=779px){
+    .hero-left h1{
+        font-size: 30px;
+    }
+    .hero-left button{
+        margin-top: 1rem;
+        font-size: 15px;
+        font-weight: 600;
+        background-color:#20BC7E ;
+        color: white;
+        border: 0;
+        padding: 5px 20px;
+        border-radius: 20px;
+    
+    }
+    .greenimg{
+        width:450px;
+        height:450px;
+    }
+    .yellowimg{
+        height: 400px;
+        width: 400px;
+    }
+    .doctorimg{
+        height: 88%;
+    }
+}
+@media screen and (width<=779px) and (width>=760px){
+    .hero-left h1{
+        font-size: 21px;
+    }
+    .hero-left p{
+        font-weight: 500;
+    }
+    .hero-left button{
+        margin-top: 2rem;
+        font-size: 14px;
+        font-weight: 600;
+        background-color:#20BC7E ;
+        color: white;
+        border: 0;
+        padding: 5px 20px;
+        border-radius: 20px;
+    
+    }
+    .greenimg{
+        width:426px;
+        height:426px;
+    }
+    .yellowimg{
+        height: 400px;
+        width: 400px;
+    }
+    .doctorimg{
+        height: 88%;
+    }
+    .child img{
+        height: 16px;
+    }
+    .mouse{
+        top: 81px;
+        left: 18px;
+    }
+}
+@media screen and (width<=760px) and (width>=425px) {
+    .list{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    .hero-left{
+        position: relative;
+        left: 10%;
+        z-index: +1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .hero-left h1{
+        text-shadow:0px 1px 5px #20BC7E;
+        line-height: 35px;
+    }
+    .hero-left button{
+        position: relative;
+        left: 2.5rem;
+        font-size: 14px;
+    }
+    .greenimg{
+     opacity: 50%;
+        width:426px;
+        height:426px;
+    }
+    .yellowimg{
+        z-index: -1;
+      opacity: 80%;
+        height: 400px;
+        width: 400px;
+    }
+    .doctorimg{
+        height: 90%;
+    }
+    .child img{
+        height: 16px;
+    }
+
+    .hero-left{
+        margin-top:11rem;
+        height: fit-content;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .mouse{
+        display: none;
+    }
+    .lowangle{
+        position: relative;
+        top: -30px;
+        left: 30px;
+    }
+}
